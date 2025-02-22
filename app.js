@@ -3,7 +3,7 @@ let numeroLimite = 10; // Alinhar com a mensagem
 let numeros = gerarNumeroAleatorio();
 let tentativas = 1;
 
-function mensagem(tag, texto){
+function mensagem(tag, texto) {
     let titulo = document.querySelector(tag);
     titulo.innerHTML = texto;
     if ('speechSynthesis' in window) {
@@ -15,6 +15,7 @@ function mensagem(tag, texto){
         console.log("Web Speech API não suportada neste navegador.");
     }
 }
+
 function exibirMensagemInicial() {
     mensagem('h1', 'Jogo do número secreto');
     mensagem('p', 'Escolha um número de 1 a 10'); // Alinhar com o limite
