@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100; // Alinhar com a mensagem
+let numeroLimite = 50; // Alinhar com a mensagem
 let numeros = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -18,7 +18,7 @@ function mensagem(tag, texto) {
 
 function exibirMensagemInicial() {
     mensagem('h1', 'Jogo do número secreto');
-    mensagem('p', 'Escolha um número de 1 a 100'); // Alinhar com o limite
+    mensagem('p', 'Escolha um número de 1 a 50'); // Alinhar com o limite
 }
 
 exibirMensagemInicial();
